@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 
-namespace PII_Herencia
+namespace Herencia
 {
     public class TwitterMessage : TwitterApi
     {
