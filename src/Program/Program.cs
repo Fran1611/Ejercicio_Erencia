@@ -21,6 +21,25 @@ namespace Program
             var twitter = new TwitterImage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
             Console.WriteLine(twitter.PublishToTwitter("Probando ",@"img.jpg"));
             
+             Passenger valentina = new Passenger("Valentina","Alvarez",52315904);
+            Passenger agustin = new Passenger("Agustin","Gonzalez",7894561);
+            Passenger francisco = new Passenger("Francisco","Ibañez",45678904);
+            Passenger alejandro = new Passenger("Alejandro","Affonso",12478954);
+
+            Driver conductor1 = new Pool("Juan","Perez",45789047, "Audi", "Hola! Soy estudiante en la UCU",4);
+
+            
+            
+            valentina.Califications(conductor1, 5);
+            agustin.Califications(conductor1, 4);
+            francisco.Califications(conductor1, 4);
+            alejandro.Califications(conductor1,5);
+
+            conductor1.Califications(valentina,5);
+            conductor1.Califications(agustin,4);
+            conductor1.Califications(francisco,4);
+            conductor1.Califications(alejandro,5);
+
             //var twitterDirectMessage = new TwitterMessage(consumerKey, consumerKeySecret, accessToken, accessTokenSecret);
             //Console.WriteLine(twitterDirectMessage.SendMessage("Hola!", "380889967"));
 
