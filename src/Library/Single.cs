@@ -2,12 +2,9 @@ namespace Herencia
 {
     public class Single : Driver
     {
-        private int passengerCount;
-        public Single(string name, string surname, int iD, string vehicle, string biography, int passengersCount = 1):base(name,surname,iD,vehicle,biography)
+        
+        public Single(string name, string surname, int iD, string vehicle, string biography, int passengersCount = 1):base(name,surname,iD,vehicle,biography,passengersCount)
         {
-            this.PassengersCount = passengersCount;
         }
-
-        public int PassengersCount {get;}
     }
 }

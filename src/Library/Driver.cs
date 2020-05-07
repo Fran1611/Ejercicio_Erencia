@@ -5,14 +5,28 @@ namespace Herencia
     {
         private string biography; 
         private string vehicle;
-        private List<int> calificationsList;
+        private List<int> calificationsList = new List<int>{0};
         private int calification;
-        public Driver(string name, string surname, int iD, string vehicle, string biography):base(name,surname,iD)
+        private int passengersCount;
+        public Driver(string name, string surname, int iD, string vehicle, string biography, int passengerCount):base(name,surname,iD)
         {
             this.Biography = biography;
             this.Vehicle = vehicle;
             this.CalificationsList = calificationsList;
             this.Calification = calification;
+            this.PassengersCount = passengersCount;
+        }
+        public int PassengersCount 
+        {
+            get{return passengersCount;}
+            
+            set
+            {
+                if (0<= value && value<=4)
+                {
+                    passengersCount = value;
+                }
+            }  
         }
 
         public string Biography{get;set;}

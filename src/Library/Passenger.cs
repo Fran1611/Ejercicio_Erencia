@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System;
 namespace Herencia
 {
     public class Passenger : Person, ICalifications<Driver>
 
     {   
-        private List<int> calificationsList;
+        private List<int> calificationsList = new List<int>{0};
         private int calification;
         public Passenger(string name, string surname, int iD): base(name,surname,iD)
         {
@@ -24,7 +25,7 @@ namespace Herencia
         public void Califications(Driver driver, int score)
         {   
             int sumaDeCalificaciones = 0;
-            int cantidad = driver.CalificationsList.Count;
+            int cantidad = (driver.CalificationsList.Count);
 
             if (0<=score && score<=5)
             {  
