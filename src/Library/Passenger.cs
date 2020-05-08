@@ -5,7 +5,7 @@ namespace Herencia
     public class Passenger : Person, ICalifications<Driver>
 
     {   
-        private List<int> calificationsList;
+        private List<int> calificationsList = new List<int>();
         private int calification;
         public Passenger(string name, string surname, int iD): base(name,surname,iD)
         {
@@ -24,10 +24,11 @@ namespace Herencia
         // El metodo hace que el Passenger califique al Driver.
         public void Califications(Driver driver, int score)
         {   
-            int sumaDeCalificaciones = 0;
+            
            
             if (0<=score && score<=5)
             {  
+                int sumaDeCalificaciones = 0;
                 driver.AddItem(score);
                 int cantidad = (driver.CalificationsList.Count);
                 
@@ -35,8 +36,10 @@ namespace Herencia
                 {
                     sumaDeCalificaciones += i;
                 }
+            
+                driver.Calification = (sumaDeCalificaciones / cantidad);
             }
-            driver.Calification = (sumaDeCalificaciones / cantidad);
+            
         }
     }
 }
