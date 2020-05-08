@@ -20,7 +20,7 @@ namespace Herencia
                 if (cog.SmileFound)
                 {
                     Console.WriteLine("Found a Smile :)");
-                    Console.WriteLine(twitter.PublishToTwitter($"Bienvenido {Name}! El nuevo Conductor Pool de UCURide que llevará hasta {PassengersCount} pasajeros Bio: {Biography} ",@"sonrisa.jpg"));
+                    Console.WriteLine(twitter.PublishToTwitter($"Bienvenido {Name}! El nuevo Conductor Pool de UCURide que llevará hasta {PassengersCount} pasajeros Bio: {Biography} ",@"..\Program\sonrisa.jpg"));
                 }
                 else
                 {
@@ -42,7 +42,7 @@ namespace Herencia
             if (cog.FaceFound)
             {
                 Console.WriteLine("Face Found!");
-                Console.WriteLine(twitter.PublishToTwitter($"Bienvenido {Name} {LastName}! Nuevo usuario de la app con ci numero {Id}",@"images.jpg"));
+                Console.WriteLine(twitter.PublishToTwitter($"Bienvenido {Name} {LastName}! Nuevo usuario de la app con ci numero {Id}",@"..\Program\images.jpg"));
                 if (cog.SmileFound)
                 {
                     Console.WriteLine("Found a Smile :)");
