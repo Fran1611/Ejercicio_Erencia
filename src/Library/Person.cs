@@ -3,9 +3,6 @@ namespace Herencia
 {
     public class Person
     {
-        private string name;
-        private string surname;
-        private int iD;
         
         public Person(string name, string surname, int iD)
         {

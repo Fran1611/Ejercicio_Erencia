@@ -3,8 +3,6 @@ namespace Herencia
 {
     public class Driver : Person, ICalifications<Passenger>
     {
-        private string biography; 
-        private string vehicle;
         private List<int> calificationsList;
         private int calification;
         private int passengersCount;
