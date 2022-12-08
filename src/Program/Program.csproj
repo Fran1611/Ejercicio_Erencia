@@ -3,7 +3,7 @@
     <ProjectReference Include="..\Library\Library.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2"/>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="6.2.0"/>
